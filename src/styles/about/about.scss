@@ -1,0 +1,27 @@
+.about-icons {
+    background: linear-gradient(89.28deg, #7859BC 14.13%, #5663ED 86.14%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 235px;
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 335px;
+        color: white;
+    }
+    &__description {
+        display: block;
+        max-width: 256px;
+        width: 256px;
+        font-size: 16px;
+        font-family: Roboto;
+    }
+    &__short {
+        width: 240px;
+    }
+    &__text {
+        height: 100px;
+    }
+}
