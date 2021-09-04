@@ -1,0 +1,28 @@
+{
+  "name": "html-scss-start",
+  "version": "1.0.0",
+  "description": "Start template for html and scss project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-inline-svg-plugin": "^2.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "posthtml-include": "^1.7.1",
+    "posthtml-loader": "^2.0.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  }
+}
