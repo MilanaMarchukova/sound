@@ -25,3 +25,58 @@
         height: 100px;
     }
 }
+
+.about-numbers {
+    display: flex;
+    justify-content: center;
+    &__txt {
+        h1 {
+            margin: 0;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 130%;
+            margin-right: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+        width: 300px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 130%;
+        color: #323232;
+    }
+    &__title {
+        display: flex;
+    }
+    &__stats {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130%;
+        color: #323232;
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 130%;
+            color: #7859BC;
+            margin-right: 30px;
+            text-align: right;
+            width: 100px;
+        }
+    }
+    &__stat {
+        display: flex;
+    }
+}
