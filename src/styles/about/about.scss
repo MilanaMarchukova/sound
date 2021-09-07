@@ -1,8 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .about-icons {
     background: linear-gradient(89.28deg, #7859BC 14.13%, #5663ED 86.14%);
     border-radius: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1208px;
+    padding: 0 160px;
+    margin-top: 43px;
     height: 235px;
     &__icon {
         display: flex;
@@ -28,7 +38,8 @@
 
 .about-numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1208px;
     &__txt {
         h1 {
             margin: 0;
@@ -62,7 +73,8 @@
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 130%;
+        height: 280px;
+        // line-height: 130%;
         color: #323232;
         span {
             font-family: Montserrat;
@@ -78,5 +90,21 @@
     }
     &__stat {
         display: flex;
+    }
+    &__age {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 130%;
+        color: #7859BC;
+        letter-spacing: 0.1em;
+        position: relative;
+        img {
+            height: 290px;
+        }
     }
 }
