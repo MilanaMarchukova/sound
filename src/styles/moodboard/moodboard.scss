@@ -1,13 +1,14 @@
 .moodboard {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 180px;
     &__grid {
         display: grid;
         grid-template: repeat(6, 1fr) / repeat(6, 1fr);
         grid-gap: 10px;
         width: 1214px;
     }
-    height: 789px;
     & h1 {
         align-self: center;
         grid-column: span 4;
@@ -61,6 +62,16 @@
             top: 0;
             left: 0;
             border-radius: 10px;
+        }
+    }
+    &__arrow {
+        width: 85px;
+        height: 85px;
+        &_right {
+            margin-left: 67px;
+        }
+        &_left {
+            margin-right: 67px;
         }
     }
 }
