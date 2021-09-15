@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 170px auto 50px auto;
     & h1 {
         font-family: Montserrat;
         font-style: normal;
@@ -55,6 +56,29 @@
     box-sizing: border-box;
     position: relative;
     border-radius: 10px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    &:hover {
+        background-color: #7859BC;
+        & .news-cards__title {
+            color: #FFFFFF;
+        }
+        & .news-cards__description {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        & .news-cards__time {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        & .news-cards__date {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        & .news-cards__clock {
+            display: none;
+        }
+        & .news-cards__clock_hover {
+            display: block;
+        }
+    }
     &__container {
         display: flex;
         justify-content: space-between;
@@ -94,6 +118,7 @@
     &__datetime {
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
     }
     &__time-block {
         display: flex;
@@ -102,6 +127,9 @@
     &__clock {
         width: 20px;
         height: 20px;
+        &_hover {
+            display: none;
+        }
     }
     &__time {
         font-family: Roboto;
