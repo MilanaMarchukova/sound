@@ -1,3 +1,4 @@
+@use '../fonts.scss';
 .news {
     background: linear-gradient(179.99deg, #ECEFF2 0.01%, #ECEFF2 71.4%, rgba(255, 255, 255, 0) 91.99%);
     border-radius: 60px;
@@ -8,12 +9,7 @@
     align-items: center;
     margin: 170px auto 50px auto;
     & h1 {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 130%;
-        color: #323232;
+        @extend %font-h1;
     }
     &__subtitle {
         display: flex;
@@ -23,12 +19,7 @@
         & h2 {
             width: 718px;
             text-align: center;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 130%;
-            color: #323232;
+            @extend %font-h2;
             margin: 0;
         }
     }
@@ -36,11 +27,7 @@
         background: #D52F3B;
         border-radius: 60px;
         padding: 22px 93px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 130%;
+        @extend %font-h3;
         color: #FFFFFF;
     }
 }
@@ -100,19 +87,11 @@
         text-transform: uppercase;
     }
     &__title {
-        font-family: Roboto;
-        font-style: normal;
+        @extend %font-h4;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 130%;
-        color: #323232;
     }
     &__description {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 130%;
+        @extend %font-h4;
         color: rgba(50, 50, 50, 0.7);
     }
     &__datetime {
@@ -132,19 +111,11 @@
         }
     }
     &__time {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 130%;
+        @extend %font-h4;
         color: rgba(50, 50, 50, 0.5);
     }
     &__date {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 130%;
+        @extend %font-h4;
         color: rgba(50, 50, 50, 0.5);
     }
     &__image {
