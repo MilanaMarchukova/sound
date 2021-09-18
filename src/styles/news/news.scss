@@ -23,13 +23,6 @@
             margin: 0;
         }
     }
-    &__button {
-        background: #D52F3B;
-        border-radius: 60px;
-        padding: 22px 93px;
-        @extend %font-h3;
-        color: #FFFFFF;
-    }
 }
 
 .news-cards {

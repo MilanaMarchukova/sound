@@ -1,0 +1,33 @@
+@use '../fonts.scss';
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        width: 555px;
+        & h1 {
+            margin: 0;
+            @extend %font-h1;
+        }
+    }
+    & h2 {
+        @extend %font-h2;
+    }
+}
+
+.top-cards {
+    background-color: #ECEFF2;
+    width: 296px;
+    height: 424px;
+    border-radius: 10px;
+    padding: 20px;
+    &__rating {
+        display: flex;
+        &_sale {
+            padding-right: 20px;
+            text-decoration: line-through;
+        }
+    }
+}
