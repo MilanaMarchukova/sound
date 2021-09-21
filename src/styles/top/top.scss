@@ -15,19 +15,95 @@
     & h2 {
         @extend %font-h2;
     }
+    &__button {
+        margin-bottom: 180px;
+    }
 }
 
 .top-cards {
     background-color: #ECEFF2;
     width: 296px;
-    height: 424px;
+    height: 361px;
     border-radius: 10px;
     padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    &__content {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 1520px;
+        &_arrow-right {
+            margin-left: 70px;
+        }
+        &_arrow-left {
+            margin-right: 70px;
+        }
+    }
+    &:hover {
+        background-color: #7859BC;
+        & .top-cards__title {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        & .top-cards__rating {
+            & h4 {
+                color: #FFFFFF;
+            }
+            color: #FFFFFF;
+        }
+        & .top-cards__rating_sale {
+            color: #FFFFFF;
+        }
+        & .top-cards__price h2 {
+            color: #FFFFFF;
+        }
+        & .top-cards__heart-hover {
+            display: inline;
+        }
+        & .top-cards__heart-normal {
+            display: none;
+        }
+    }
+    &__heart-hover {
+        display: none;
+    }
     &__rating {
         display: flex;
+        & h4 {
+            @extend %font-h4;
+            margin: 0;
+        }
         &_sale {
             padding-right: 20px;
             text-decoration: line-through;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: -64px;
+        left: 57px;
+        display: block;
+    }
+    &__title {
+        @extend %font-h4;
+        flex: 1;
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h2 {
+            margin: 0;
         }
     }
 }
