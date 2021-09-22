@@ -1,0 +1,40 @@
+@use '../fonts.scss';
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        @extend %font-h1;
+        margin: 0;
+    }
+    & h2 {
+        @extend %font-h2;
+        width: 612px;
+        text-align: center;
+    }
+    &__philips:hover {
+        .partners__brands_hover {
+            display: block;
+        }
+        .partners__brands_normal {
+            display: none;
+        }
+    }
+    &__brands {
+        &_hover {
+            display: none;
+        }
+        &>div {
+            width: 170px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        width: 1214px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 135px;
+        margin-bottom: 190px;
+    }
+}
