@@ -1,0 +1,40 @@
+@use '../fonts.scss';
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__banner {
+    background: linear-gradient(89.28deg, #7859BC 14.13%, #5663ED 86.14%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 1208px;
+    padding: 0 160px;
+    margin-top: 43px;
+    height: 290px;
+    position: relative;
+    & h1 {
+        @extend %font-h1;
+        color: white;
+        margin: 80px 0 0 0;
+    }
+    & h2 {
+        @extend %font-h2;
+        color: white;
+        width: 360px;
+    }
+    &__txt {
+        display: flex;
+        flex-direction: column;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        position: absolute;
+        top: -50px;
+        right: 148px;
+    }
+}
